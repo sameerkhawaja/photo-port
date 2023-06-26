@@ -1,15 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 import {capitalizeFirstLetter} from "../../utils/helpers"
 
-function Nav(){
-    const [categories] = useState([
-        { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-        { name: 'portraits', description: 'Portraits of people in my life' },
-        { name: 'food', description: 'Delicious delicacies' },
-        { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
-      ]);
-    
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+function Nav(props){
+    // destructure the properties in props to assign them to variables
+    // if categories is not provided, default to empty array
+    const{
+        categories =[],
+        setCurrentCategory,
+        currentCategory
+    } = props
 
     return (
         <header data-testid="header" className="flex-row px-1">
