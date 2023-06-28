@@ -131,7 +131,6 @@ const PhotoList = ({ category }) => {
                         key={photo.name}
                     ></img>
                 ))}
-                ;
             </div>
         </div>
     );
