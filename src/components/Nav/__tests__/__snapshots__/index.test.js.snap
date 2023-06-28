@@ -10,6 +10,7 @@ exports[`Nav component matches snapshot DOM node structure 1`] = `
       <a
         data-testid="link"
         href="/"
+        style="white-space: nowrap;"
       >
         <span
           aria-label="camera"
@@ -30,6 +31,7 @@ exports[`Nav component matches snapshot DOM node structure 1`] = `
           <a
             data-testid="about"
             href="#about"
+            style="white-space: nowrap;"
           >
             About me
           </a>
@@ -39,34 +41,6 @@ exports[`Nav component matches snapshot DOM node structure 1`] = `
         >
           <span>
             Contact
-          </span>
-        </li>
-        <li
-          class="mx-1"
-        >
-          <span>
-            Commercial
-          </span>
-        </li>
-        <li
-          class="mx-1"
-        >
-          <span>
-            Portraits
-          </span>
-        </li>
-        <li
-          class="mx-1"
-        >
-          <span>
-            Food
-          </span>
-        </li>
-        <li
-          class="mx-1"
-        >
-          <span>
-            Landscape
           </span>
         </li>
       </ul>
